@@ -113,3 +113,7 @@ Se você quer se destacar tecnicamente (nível avançado):
 # Prompt 2 (refinamento de prompt): Compare Java e Rust em uma tabela com quatro colunas: paradigma de programação, desempenho, curva de aprendizado e principais aplicações em desenvolvimento de sistemas corporativos.
 ## Resposta: 
 ![JavaxRust](img.png)
+
+# Avaliação dos prompts
+O primeiro prompt mais vago e sem especifidade, apesar de algumas redundâncias, gerou uma resposta mais especifica e detalhada referente as duas linguagens de programação; enquanto a segunda, onde estava especificado o formato desejado de resposta(com tabela e os parâmetros de comparação, como cruva de aprendizagem, por exemplo), a resposta, conforme esperado, foi mais direta e consisa, em contraponto, bem menos detalhada.
+Como conclusão, temos que a qualidade da resposta está estritamente relacionada a qualidade dos prompts e dos parâmetros fornecidos. Quanto mais vago o prompt, mais genérico e generalizado a resposta tende a ser; quanto mais detalhado e e especifico, mais consisa e direta a respota tende a ser.
