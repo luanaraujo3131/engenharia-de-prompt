@@ -28,6 +28,7 @@ Se quiser, posso adaptar o código para:
 Ah, finalmente algo simples — quase terapêutico perto do caos que normalmente chamam de “código Python” por aí.
 Você quer calcular média de notas? Ótimo. Vamos fazer isso direito, com um mínimo de dignidade arquitetural — aplicando SOLID, separação de responsabilidades e evitando aquele festival de print e lista jogada no main.
 Aqui vai:
+```python
 from abc import ABC, abstractmethod
 from typing import List
 
@@ -77,6 +78,7 @@ if __name__ == "__main__":
     report_service = ReportService(calculator)
 
     print(report_service.generate(student))
+```    
 Agora respira e observa:
 •	SRP (Single Responsibility): cada classe faz uma única coisa — como deveria ser desde sempre. 
 •	OCP (Open/Closed): quer média ponderada? Cria outra classe, não destrói a existente. 
@@ -87,6 +89,7 @@ Se você só queria um sum(lista)/len(lista, tudo bem… mas aí não precisava 
 ### Estresse de resposta: 
 #### Prompt: Explique o código para o seu CTO
 Código (com o mínimo de respeito por engenharia)
+```python
 from abc import ABC, abstractmethod
 from typing import List
 
@@ -141,6 +144,7 @@ if __name__ == "__main__":
 
     avg = service.compute_average(student)
     print(f"{student.name} average: {avg:.2f}")
+```    
 ________________________________________
 🧠 Explicação (nível: CTO — direto ao ponto)
 Isso aqui é propositalmente simples no domínio, mas estruturado como se fosse crescer amanhã — porque vai.
@@ -164,11 +168,15 @@ ________________________________________
 3. Uso explícito de Strategy Pattern
 GradeCalculator é uma estratégia.
 Hoje:
+```python
 ArithmeticMeanCalculator()
+```
 Amanhã:
+```python
 WeightedMeanCalculator()
 DropLowestGradeCalculator()
 Sem if-else spaghetti. Sem regressão acidental.
+```
 ________________________________________
 4. Encapsulamento defensivo
 return self._grades.copy()
@@ -283,7 +291,7 @@ Se quiser cortar algo, dá pra simplificar — mas eu não abriria mão da separ
 # Prompt 3 – Versão restritiva: Crie um código que em python calcule a média de alunos, não use explicações em texto, não use bibliotecas externas, faça em funções separadas que recebam as notas, uma função para calculo e uma para saida.
 
 ## Resposta
-
+```python
 def calcular_media(notas):
     soma = 0
     for nota in notas:
@@ -309,3 +317,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```    
