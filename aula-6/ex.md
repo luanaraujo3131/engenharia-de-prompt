@@ -13,7 +13,7 @@ for i in range(quantidade):
     soma += nota
 media = soma / quantidade
 print(f"A média das notas é: {media:.2f}")
-
+´´´
 •	Você informa quantos alunos existem. 
 •	Digita a nota de cada um. 
 •	O programa soma todas as notas. 
