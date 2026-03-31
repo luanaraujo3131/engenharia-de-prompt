@@ -2,7 +2,10 @@
 
 # Prompt 1 – Versão neutra: Crie um código que calcule a média de alunos?
 ## Resposta: 
- #Programa para calcular a média de alunos
+ # Programa para calcular a média de alunos
+
+```python
+# Programa para calcular a média de alunos
 quantidade = int(input("Digite o número de alunos: "))
 soma = 0
 for i in range(quantidade):
