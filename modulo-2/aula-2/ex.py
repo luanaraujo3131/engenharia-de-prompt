@@ -1,59 +1,50 @@
-# Simple Calculator - Object-Oriented Refactor
+## Calculadora Simples
 
-import math
-from typing import Callable, Any
+def sum(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero"
+    return a / b
+def pi():
+    return 3.14159626535897932384626433832795
+def e():
+    return 2.7182818284590452353602874713527
 
-class Calculator:
-    """A simple calculator class with basic operations and constants."""
-
-    def __init__(self):
-        self.operations = {
-            'add': self._create_binary_op(lambda a, b: a + b, '+'),
-            'subtract': self._create_binary_op(lambda a, b: a - b, '-'),
-            'multiply': self._create_binary_op(lambda a, b: a * b, '*'),
-            'divide': self._create_binary_op(self._safe_divide, '/'),
-            'pi': self._create_constant(math.pi, 'Pi'),
-            'e': self._create_constant(math.e, 'E'),
-        }
-
-    def _create_binary_op(self, func: Callable[[float, float], Any], symbol: str) -> Callable[[], None]:
-        """Create a handler for binary operations."""
-        def handler():
-            try:
-                a = float(input(f"Enter first number: "))
-                b = float(input(f"Enter second number: "))
-                result = func(a, b)
-                print(f"{a} {symbol} {b} = {result}")
-            except ValueError:
-                print("Invalid input. Please enter valid numbers.")
-        return handler
-
-    def _safe_divide(self, a: float, b: float) -> Any:
-        """Perform safe division with zero check."""
-        return a / b if b != 0 else "Error: Division by zero"
-
-    def _create_constant(self, value: float, name: str) -> Callable[[], None]:
-        """Create a handler for constant values."""
-        def handler():
-            print(f"{name} = {value}")
-        return handler
-
-    def run(self):
-        """Run the interactive calculator loop."""
-        print("Welcome to the Calculator!")
-        print("Available operations: add, subtract, multiply, divide, pi, e, exit")
-
-        while True:
-            operation = input("\nEnter operation: ").lower().strip()
-
-            if operation == 'exit':
-                print("Goodbye!")
-                break
-            elif operation in self.operations:
-                self.operations[operation]()
-            else:
-                print("Invalid operation. Please try again.")
+def main():
+    while True:
+        operation = input("Enter the operation (sum, subtract, multiply, divide, pi, e, exit): ")
+        if operation == "sum" or operation == "Sum":
+            a = float(input("Enter the first number: "))
+            b = float(input("Enter the second number: "))
+            print(f"The result of {a} + {b} is: {sum(a, b)}")
+        elif operation == "subtract" or operation == "Subtract":
+            a = float(input("Enter the first number: "))
+            b = float(input("Enter the second number: "))
+            print(f"The result of {a} - {b} is: {subtract(a, b)}")
+        elif operation == "multiply" or operation == "Multiply":
+            a = float(input("Enter the first number: "))
+            b = float(input("Enter the second number: "))
+            print(f"The result of {a} * {b} is: {multiply(a, b)}")
+        elif operation == "divide" or operation == "Divide":
+            a = float(input("Enter the first number: "))
+            b = float(input("Enter the second number: "))
+            print(f"The result of {a} / {b} is: {divide(a, b)}")
+        elif operation == "pi" or operation == "Pi":
+            print(f"Pi: {pi()}")
+        elif operation == "e" or operation == "E":
+            print(f"E: {e()}")
+        elif operation == "exit" or operation == "Exit":
+            print("The end of the program!")
+            break
+        else:
+            print("Invalid operation. Please try again.")
+        print()
 
 if __name__ == "__main__":
-    calc = Calculator()
-    calc.run()
+    main()
+
