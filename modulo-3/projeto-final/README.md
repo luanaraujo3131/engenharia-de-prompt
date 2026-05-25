@@ -71,5 +71,5 @@ Percebemos que ferramentas low code podem ser muito eficientes para a criação 
 https://araujoluan3121.bubbleapps.io/version-test?debug_mode=false
 
 ## Nome
-Luan Araújo 
-Guilherme Galvão Silva
+* Luan Araújo 
+* Guilherme Galvão Silva
