@@ -68,4 +68,8 @@ Percebemos que ferramentas low code podem ser muito eficientes para a criação 
 * Criação de tópicos, filtros e pesquisas para facilitar encontrar nóticias de interesse dos usuários
 
 # Link do projeto
-https://araujoluan3121.bubbleapps.io/version-test?debug_mode=true
+https://araujoluan3121.bubbleapps.io/version-test?debug_mode=false
+
+## Nome
+Luan Araújo 
+Guilherme Galvão Silva
