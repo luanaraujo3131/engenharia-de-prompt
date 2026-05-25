@@ -1,3 +1,4 @@
+
 # 📌 Desafio Escolhido
 
 Uma aplicação que automatiza o cadastro de usuários em uma newsletter de tecnologia e finanças.
