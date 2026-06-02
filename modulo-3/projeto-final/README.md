@@ -27,10 +27,12 @@ O protótipo é uma landing page responsiva voltada para conteúdos sobre tecnol
 O usuário acessa a página inicial e preenche o nome e o e-mail; ao clicar no botão “Entrar na Newsletter”, os dados são enviados para o banco de dados e o sistema envia automaticamente um e-mail de confirmação, após isso uma mensagem de sucesso é exibida na tela.
 
 # Protótipo
-![tela inicial](docs/img/tela-inicial.png)
+![tela inicial](docs/img/tela_inicial.png)
 ![sobre](docs/img/sobre.png)
-![news](docs/img/news.png)
-![login](docs/img/cadastro.png)
+![news](docs/img/newsletter-1.png)
+![news](docs/img/newsletter-2.png)
+![login](docs/img/login.png)
+
 
 # ⚙️ Plataforma Utilizada
 Bubble
@@ -68,7 +70,7 @@ Percebemos que ferramentas low code podem ser muito eficientes para a criação 
 * Criação de tópicos, filtros e pesquisas para facilitar encontrar nóticias de interesse dos usuários
 
 # Link do projeto
-https://araujoluan3121.bubbleapps.io/version-test?debug_mode=false
+https://tecnologia-e-financias-s.bubbleapps.io/version-test?debug_mode=true
 
 ## Nome
 * Luan Araújo 
